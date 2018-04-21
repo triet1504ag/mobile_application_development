@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width ="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.example.trietpham.sn.MainActivity">
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input :"
+        android:textSize="20dp"
+        android:id="@+id/in_textview"/>
+
+    <Spinner
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="26dp"
+        android:layout_toRightOf="@+id/in_textview"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_spinner"
+        >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/in_edit"
+        android:inputType="numberDecimal"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/in_spinner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Type value you want to exchange"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/in_edit"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output :"
+        android:textSize="20dp"
+        android:id="@+id/out_textview"
+        />
+
+    <Spinner
+        android:layout_below="@+id/in_edit"
+        android:layout_toRightOf="@+id/out_textview"
+        android:layout_marginStart="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/out_spinner"
+        android:layout_marginTop="30dp"
+        >
+    </Spinner>
+
+    <TextView
+        android:layout_below="@+id/out_spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:id="@+id/result"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Exchange"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/exchange_button"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Reset"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/reset_button"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright@TrietPham"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/exitbtn"
+        android:src="@drawable/exit_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="310dp"/>
+
+
+</RelativeLayout>
